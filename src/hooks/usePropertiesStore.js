@@ -17,7 +17,8 @@ import {
     onCreatePropertyFailed,
     onUpdatePropertySuccess,
     onUpdatePropertyFailed,
-    onChecking } from "../store/properties/propertiesSlice";
+    onChecking,
+    onCleanPropertyDetails } from "../store/properties/propertiesSlice";
 
 
 
@@ -269,6 +270,10 @@ export const usePropertiesStore = () => {
         }
     }
 
+    const startCleaningPropertyDetails = () => {
+        dispatch(onCleanPropertyDetails());
+    }
+
     return {
         startLoadingLastCreatedProperties,
         startLoadingLastCreatedDepartments,
@@ -284,6 +289,7 @@ export const usePropertiesStore = () => {
         startUpdatingProperty,
         obtainImageData,
         startCreatingProperty,
-        startExportingUserData
+        startExportingUserData,
+        startCleaningPropertyDetails
     }
 }

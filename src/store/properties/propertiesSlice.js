@@ -103,6 +103,9 @@ export const propertiesSlice = createSlice({
         },
         onChecking: ( state ) => {
             state.status = 'checking';
+        },
+        onCleanPropertyDetails: ( state ) => {
+            state.propertyDetails = null;
         }
     }
 });
@@ -124,5 +127,6 @@ export const {
     onCreatePropertyFailed,
     onUpdatePropertySuccess,
     onUpdatePropertyFailed,
-    onChecking
+    onChecking,
+    onCleanPropertyDetails
 } = propertiesSlice.actions;

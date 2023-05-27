@@ -19,9 +19,10 @@ export const DisplayPropertyDetails = () => {
 
     const { id } = useParams();
 
-    const { startLoadingPropertyDetails, startSendingMessage, startClearingMessages } = usePropertiesStore();
+    const { startLoadingPropertyDetails, startSendingMessage, startClearingMessages, startCleaningPropertyDetails } = usePropertiesStore();
 
     useEffect(() => {
+        startCleaningPropertyDetails();
         startLoadingPropertyDetails(id);
     },[]);
 
