@@ -35,9 +35,8 @@ export const DisplayProfilePicture = () => {
                     <Box
                         component="img"
                         sx={{
-                            width: { xs: '100%', sm: '50%' },
-                            maxHeight: { xs: 233, sm: 167 },
-                            height: 'auto',
+                            width: {xs: '150px', md: '250px'},
+                            height: {xs: '150px', md: '250px'},
                             borderRadius: '100%'
                         }}
                         alt="The house from the offer."
