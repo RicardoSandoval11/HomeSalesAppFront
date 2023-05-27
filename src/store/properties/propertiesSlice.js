@@ -105,7 +105,7 @@ export const propertiesSlice = createSlice({
             state.status = 'checking';
         },
         onCleanPropertyDetails: ( state ) => {
-            state.propertyDetails = null;
+            state.propertyDetails = [];
         }
     }
 });
