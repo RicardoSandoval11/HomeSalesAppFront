@@ -37,7 +37,7 @@ export const DisplayProfilePicture = () => {
                         sx={{
                             width: { xs: '100%', sm: '50%' },
                             maxHeight: { xs: 233, sm: 167 },
-                            maxWidth: { xs: 350, sm: 250 },
+                            height: 'auto',
                             borderRadius: '100%'
                         }}
                         alt="The house from the offer."
